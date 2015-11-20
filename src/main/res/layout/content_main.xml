@@ -9,7 +9,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="@string/content_title" android:layout_width="wrap_content"
+    <TextView android:text="@string/content_title" android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -17,57 +17,69 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textAlignment="center"
+        android:gravity="center"
         android:id="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="@string/button_string"
         android:id="@+id/button"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignStart="@+id/button3"
+        android:width="200sp"
+        android:onClick="buttonOnClick"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="@string/button2_string"
         android:id="@+id/button2"
         android:layout_below="@+id/button"
         android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        android:layout_alignStart="@+id/button"
+        android:width="200sp"
+        android:onClick="buttonOnClick"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="@string/button3_string"
         android:id="@+id/button3"
         android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:width="200sp"
+        android:onClick="buttonOnClick"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="@string/button4_string"
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:width="200sp"
+        android:onClick="buttonOnClick"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="@string/button5_string"
         android:id="@+id/button5"
         android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:width="200sp"
+        android:onClick="buttonOnClick"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="@string/button6_string"
         android:id="@+id/button6"
         android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:width="200sp"
+        android:onClick="buttonOnClick"/>
 </RelativeLayout>
