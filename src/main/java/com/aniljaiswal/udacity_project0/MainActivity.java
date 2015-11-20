@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Toast mAppToast = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +25,17 @@ public class MainActivity extends AppCompatActivity {
      */
     public void buttonOnClick(View button) {
 
+        //Cancel any existing toasts
+        if(this.mAppToast !=null) {
+            this.mAppToast.cancel();
+        }
+
         Button b = (Button)button;
 
-        Toast.makeText(MainActivity.this, "This button will launch my " + b.getText().toString() + " app.", Toast.LENGTH_SHORT).show();
+        String msg = "This button will launch my " + b.getText().toString() + " app.";
+
+        this.mAppToast = Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT);
+        this.mAppToast.show();
 
     }
 
